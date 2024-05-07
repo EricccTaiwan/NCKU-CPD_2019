@@ -1,0 +1,17 @@
+program lkk
+implicit none
+integer::x
+integer::square
+integer::i=0
+real::bar
+do index=1,5
+read(*,*)x
+if(x <= 0)exit
+i=i+1
+
+square=square+x**2
+
+end do
+bar=sqrt(real(square)/real(i))
+write(*,*)"ave",bar
+end program

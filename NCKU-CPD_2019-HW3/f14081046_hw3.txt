@@ -1,0 +1,42 @@
+program test
+implicit none
+integer::x
+integer::y=0
+integer::n=1
+real::bar
+do
+read(*,*)x
+if(x<0) exit
+n=n*x
+y=y+1
+
+end do
+bar=real(n)**(1/real(y))
+write(*,*)'geometric mean',bar
+end program
+
+
+
+
+
+
+
+10/23
+program lkk
+implicit none
+integer::x
+integer::square
+integer::i=0
+real::bar
+do
+read(*,*)x
+if(x <= 0)exit
+i=i+1
+
+square=square+x**2
+
+end do
+bar=sqrt(real(square)/real(i))
+write(*,*)"ave",bar
+end program
+
